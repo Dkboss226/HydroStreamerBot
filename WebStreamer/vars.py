@@ -26,7 +26,6 @@ class Var(object):
     "s" if HAS_SSL else "",
     FQDN
 )
-
     DATABASE_URL = str(environ.get('DATABASE_URL'))
     UPDATES_CHANNEL = str(environ.get('UPDATES_CHANNEL', "Telegram"))
     OWNER_ID = int(environ.get('OWNER_ID'))
